@@ -70,7 +70,10 @@ function up(){
           uploadcar();
           uploadcar2();
 
-    
+          if(x > 700){
+            console.log("car1 Won!!");
+            document.getElementById("game_status").innerHTML = "Car 1 Won!";
+        }
          }
      }
  
@@ -81,8 +84,9 @@ function up(){
               uploadcar();
               uploadcar2();
 
-        
+              
              }
+             
          }
          function up2(){
             if(y2>0){
@@ -114,9 +118,13 @@ function up(){
                   uploadcar2();
                   uploadcar();
 
-                 
+                  if(x2 > 700){
+                    console.log("car1 Won!!");
+                    document.getElementById("game_status").innerHTML = "Car 2 Won!";
+                }
             
                  }
+                 
              }
          
                  function left2(){
@@ -130,6 +138,10 @@ function up(){
                 
                      }
                  }
+
+                
+
+                 
         
          
 
